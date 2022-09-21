@@ -1,11 +1,9 @@
 
 
-Testing Octopus package in spack
-=================================
+Testing Octopus package in spack (`spack-ci-octopus`)
+=====================================================
 
 .. sectnum::
-
-.. contents:: 
 
 Support repository for getting the `OCTOPUS code <http://octopus-code.org>`__ package into
 `Spack <http://spack.readthedocs.io>`__.
@@ -14,20 +12,20 @@ There are (at least two different) error types that can lead to a problem with c
 
 1. changes to the octopus specific packaging instructions or newer versions of
 octopus. In particular, this is the `octopus/package.py` file within spack. To
-run tests before we suggest changes to this file, we have used [this
-repository](https://github.com/fangohr/octopus-in-spack/).
+run tests before we suggest changes to this file, we have used `this repository
+<https://github.com/fangohr/octopus-in-spack/>`__
 
 2. changes to spack overall: changes in spack behaviour through new spack
 releases, changes to third party libraries octopus depends on, changes due to
-global reformatting of spack files, etc. [This
-repository](https://github.com/fangohr/spack-ci-octopus) is meant to detect
-these changes more easily.
+global reformatting of spack files, etc. `This repository
+<https://github.com/fangohr/spack-ci-octopus>`__ is meant to detect these
+changes more easily.
 
 Status
 ------
 
 The following targets clone spack, and attempt to install octopus through spack.
-The instructions are embedded in [this Dockerfile](Dockerfile).
+The instructions are embedded in `this Dockerfile <Dockerfile>`__.
 
 They following targets all use the default version of octopus (i.e. what spack
 would install if we run `spack install octopus`).
