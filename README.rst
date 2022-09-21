@@ -34,8 +34,8 @@ We try different versions of spack:
 
 - |spack-develop-octopus-stable| Spack develop version (git head)
 - |spack-latest-octopus-stable| Spack latest release
+- |spack-v0.18.1-octopus-stable| Spack release 0.18.1
 - |spack-v0.18.0-octopus-stable| Spack release 0.18.0,
-- |spack-v0.17.2-octopus-stable| Spack release 0.17.2
 
 .. |spack-latest-octopus-stable| image:: https://github.com/fangohr/octopus-in-spack/actions/workflows/spack-latest.yml/badge.svg
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-latest.yml
@@ -43,8 +43,8 @@ We try different versions of spack:
 .. |spack-v0.18.0-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.18.0.yml/badge.svg
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.18.0.yml
 
-.. |spack-v0.17.2-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.17.2.yml/badge.svg
-   :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.17.2.yml
+.. |spack-v0.18.1-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.18.1.yml/badge.svg
+   :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.18.1.yml
 
 .. |spack-develop-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-develop.yml/badge.svg?branch=spack-develop
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-develop.yml

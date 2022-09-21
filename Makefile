@@ -11,12 +11,12 @@ spack-v0.18.0:
 	docker build -f Dockerfile --build-arg SPACK_VERSION=v0.18.0 \
    -t octopus-spack-v0.18.0 .
 
-spack-v0.17.2:
-	docker build -f Dockerfile --build-arg SPACK_VERSION=v0.17.2 \
-   -t octopus-spack-v0.17.2 .
+spack-v0.18.1:
+	docker build -f Dockerfile --build-arg SPACK_VERSION=v0.18.1 \
+   -t octopus-spack-v0.18.1 .
 
 
 run:
 	docker run --rm -ti -v $PWD:/io octopus-spack 
 
-.PHONY: octopus-spack-v0.18.0 run spack-v0.17.2 spack-latest spack-develop
+.PHONY: octopus-spack-v0.18.1 run spack-v0.18.0 spack-latest spack-develop
