@@ -53,7 +53,6 @@ RUN $SPACK --version
 # COPY spack/package.py $SPACK_ROOT/var/spack/repos/builtin/packages/octopus/package.py
 
 RUN ls -l $SPACK_ROOT/var/spack/repos/builtin/packages/octopus
-COPY spack/test/ $SPACK_ROOT/var/spack/repos/builtin/packages/octopus/test
 RUN ls -l $SPACK_ROOT/var/spack/repos/builtin/packages/octopus/test
 
 # display specs of upcoming spack installation
