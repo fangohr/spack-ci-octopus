@@ -46,5 +46,5 @@ We try different versions of spack:
 .. |spack-v0.18.1-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.18.1.yml/badge.svg
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.18.1.yml
 
-.. |spack-develop-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-develop.yml/badge.svg?branch=spack-develop
+.. |spack-develop-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-develop.yml/badge.svg
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-develop.yml
