@@ -28,12 +28,12 @@ The instructions are embedded in `this Dockerfile <Dockerfile>`__.
 They following targets all use the default version of octopus (i.e. what spack
 would install if we run `spack install octopus`).
 
-We try different versions of spack:
+We try different versions of Spack:
 
-- |spack-develop-octopus-stable| Spack develop version (git head)
-- |spack-latest-octopus-stable| Spack latest release
-- |spack-v0.18.1-octopus-stable| Spack release 0.18.1
-- |spack-v0.18.0-octopus-stable| Spack release 0.18.0
+- |spack-develop-octopus-stable| Spack develop version (git head), Octopus 12.0
+- |spack-latest-octopus-stable| Spack latest release (=0.18.1), Octopus 18.4
+- |spack-v0.18.1-octopus-stable| Spack release 0.18.1, Octopus 18.4
+- |spack-v0.18.0-octopus-stable| Spack release 0.18.0, Octopus 11.4
 
 .. |spack-latest-octopus-stable| image:: https://github.com/fangohr/octopus-in-spack/actions/workflows/spack-latest.yml/badge.svg
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-latest.yml
