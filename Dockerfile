@@ -55,6 +55,9 @@ RUN $SPACK --version
 RUN ls -l $SPACK_ROOT/var/spack/repos/builtin/packages/octopus
 # RUN ls -l $SPACK_ROOT/var/spack/repos/builtin/packages/octopus/test
 
+# display available versions of octopus
+RUN . $SPACK_ROOT/share/spack/setup-env.sh && spack info octopus
+
 # display specs of upcoming spack installation
 RUN . $SPACK_ROOT/share/spack/setup-env.sh && spack spec octopus +netcdf+parmetis+arpack+cgal+pfft+python+likwid+libyaml+elpa+nlopt
 
@@ -65,6 +68,9 @@ RUN . $SPACK_ROOT/share/spack/setup-env.sh && spack install octopus +netcdf+parm
 RUN . $SPACK_ROOT/share/spack/setup-env.sh && spack test run --alias testname octopus
 # display output from smoke tests (just for information)
 RUN . $SPACK_ROOT/share/spack/setup-env.sh && spack test results -l testname
+
+# show octopus version at very end of output 
+RUN . $SPACK_ROOT/share/spack/setup-env.sh && spack load octopus && octopus --version
 
 # Provide bash in case the image is meant to be used interactively
 CMD /bin/bash -l
