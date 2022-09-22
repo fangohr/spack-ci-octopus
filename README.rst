@@ -3,8 +3,6 @@
 Testing Octopus package in spack (`spack-ci-octopus`)
 =====================================================
 
-.. sectnum::
-
 Support repository for packaging of the `OCTOPUS code <http://octopus-code.org>`__ package in
 `Spack <http://spack.readthedocs.io>`__.
 
@@ -18,7 +16,7 @@ https://github.com/fangohr/octopus-in-spack repository.
 2. changes to spack overall: changes in spack behaviour through new spack
 releases, changes to third party libraries octopus depends on, changes due to
 global reformatting of spack files, etc. This repository (at
-https://github.com/fangohr/spack-ci-octopus is meant to detect these changes
+https://github.com/fangohr/spack-ci-octopus) is meant to detect these changes
 more easily.
 
 Status
@@ -35,7 +33,7 @@ We try different versions of spack:
 - |spack-develop-octopus-stable| Spack develop version (git head)
 - |spack-latest-octopus-stable| Spack latest release
 - |spack-v0.18.1-octopus-stable| Spack release 0.18.1
-- |spack-v0.18.0-octopus-stable| Spack release 0.18.0,
+- |spack-v0.18.0-octopus-stable| Spack release 0.18.0
 
 .. |spack-latest-octopus-stable| image:: https://github.com/fangohr/octopus-in-spack/actions/workflows/spack-latest.yml/badge.svg
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-latest.yml
