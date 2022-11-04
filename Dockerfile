@@ -49,9 +49,6 @@ RUN cd spack && git checkout $SPACK_VERSION
 # # show which version we use
 RUN $SPACK --version
 
-# copy our package.py into the spack tree (and also example files)
-# COPY spack/package.py $SPACK_ROOT/var/spack/repos/builtin/packages/octopus/package.py
-
 RUN ls -l $SPACK_ROOT/var/spack/repos/builtin/packages/octopus
 # RUN ls -l $SPACK_ROOT/var/spack/repos/builtin/packages/octopus/test
 
