@@ -34,7 +34,7 @@ We try different versions of Spack:
 - |spack-latest-octopus-stable| Spack latest release (=0.19.0), Octopus 11.4
 - |spack-v0.19.0-octopus-stable| Spack release 0.19.0, Octopus 11.4
 - |spack-v0.18.1-octopus-stable| Spack release 0.18.1, Octopus 11.4
-
+- |spack-latest-octopusdev| Spack latest release, Octopus develop 
 
 .. |spack-latest-octopus-stable| image:: https://github.com/fangohr/octopus-in-spack/actions/workflows/spack-latest.yml/badge.svg
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-latest.yml
@@ -47,3 +47,6 @@ We try different versions of Spack:
 
 .. |spack-develop-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-develop.yml/badge.svg
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-develop.yml
+
+.. |spack-latest-octopusdev| image:: https://github.com/fangohr/octopus-in-spack/actions/workflows/spack-latest-octopusdev.yml/badge.svg
+   :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-latest-octopusdev.yml
