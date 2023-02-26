@@ -32,4 +32,4 @@ spack-latest-octopusdev:
 run:
 	docker run --rm -ti -v $PWD:/io octopus-spack 
 
-.PHONY: octopus-spack-v0.18.1 run spack-v0.19.0 spack-latest spack-develop
+.PHONY: octopus-spack-v0.18.1 run spack-v0.19.0 spack-latest spack-develop spack-latest-octopusdev
