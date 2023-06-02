@@ -30,7 +30,7 @@ would install if we run `spack install octopus`).
 
 We try different versions of Spack:
 
-- |spack-develop-octopus-stable| Spack develop version (git head), some octopus release
+- |spack-develop-octopus-stable| Spack develop version (git head), latest octopus release
 - |spack-latest-octopusdev| Spack latest release, Octopus develop 
 - |spack-latest-octopus-stable| Spack latest release, Octopus 12.2
 - |spack-v0.19.2-octopus-stable| Spack release 0.19.2, Octopus 12.1
@@ -40,7 +40,13 @@ We try different versions of Spack:
 
 .. |spack-latest-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-latest.yml/badge.svg
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-latest.yml
-   
+
+.. |spack-v0.19.2-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.19.2.yml/badge.svg
+   :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.19.2.yml
+
+.. |spack-v0.19.1-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.19.1.yml/badge.svg
+   :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.19.1.yml
+
 .. |spack-v0.19.0-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.19.0.yml/badge.svg
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.19.0.yml
 
