@@ -12,6 +12,14 @@ spack-v0.19.0:
 	docker build -f Dockerfile --build-arg SPACK_VERSION=v0.19.0 \
    -t octopus-spack-v0.19.0 .
 
+spack-v0.19.2:
+	docker build -f Dockerfile --build-arg SPACK_VERSION=v0.19.2 \
+   -t octopus-spack-v0.19.2 .
+
+spack-v0.19.1:
+	docker build -f Dockerfile --build-arg SPACK_VERSION=v0.19.1 \
+   -t octopus-spack-v0.19.1 .
+
 spack-v0.18.1:
 	docker build -f Dockerfile --build-arg SPACK_VERSION=v0.18.1 \
    -t octopus-spack-v0.18.1 .
