@@ -1,5 +1,3 @@
-
-
 Testing Octopus package in spack (`spack-ci-octopus`)
 =====================================================
 
