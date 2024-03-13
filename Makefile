@@ -8,6 +8,15 @@ spack-latest:
 	docker build -f Dockerfile --build-arg SPACK_VERSION=releases/latest \
 	-t octopus-spack-latest .
 
+spack-v0.21.2:  # March 2024
+	docker build -f Dockerfile --build-arg SPACK_VERSION=v0.21.2 \
+   -t octopus-spack-v0.21.2 .
+
+spack-v0.20.3:  # October 2023
+	docker build -f Dockerfile --build-arg SPACK_VERSION=v0.20.3 \
+   -t octopus-spack-v0.20.3 .
+
+
 spack-v0.19.2:
 	docker build -f Dockerfile --build-arg SPACK_VERSION=v0.19.2 \
    -t octopus-spack-v0.19.2 .
