@@ -1,4 +1,4 @@
-FROM debian:bullseye
+FROM debian:bookworm
 
 # # which spack version are we using now? Default is develop
 # # but other strings can be given to the docker build command
