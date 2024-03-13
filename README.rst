@@ -26,14 +26,14 @@ The instructions are embedded in `this Dockerfile <Dockerfile>`__.
 They following targets all use the default version of octopus (i.e. what spack
 would install if we run `spack install octopus`).
 
-We try different versions of Spack:
+We try different versions of spack (typically the last update for every minor
+release). Each version of spack has one "recommended" version of Octopus
+(typically the most recent Octopus release at the time of the spack release):
 
 - |spack-develop-octopus-stable| Spack develop version (git head), latest octopus release
-- |spack-latest-octopusdev| Spack latest release, Octopus develop 
-- |spack-latest-octopus-stable| Spack latest release, Octopus 12.2
+- |spack-latest-octopusdev| Spack latest release, Octopus develop (git head)
+- |spack-latest-octopus-stable| Spack latest release, Octopus ??.?
 - |spack-v0.19.2-octopus-stable| Spack release 0.19.2, Octopus 12.1
-- |spack-v0.19.1-octopus-stable| Spack release 0.19.1, Octopus 12.1
-- |spack-v0.19.0-octopus-stable| Spack release 0.19.0, Octopus 12.1
 - |spack-v0.18.1-octopus-stable| Spack release 0.18.1, Octopus 11.4
 
 .. |spack-latest-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-latest.yml/badge.svg
@@ -41,12 +41,6 @@ We try different versions of Spack:
 
 .. |spack-v0.19.2-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.19.2.yml/badge.svg
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.19.2.yml
-
-.. |spack-v0.19.1-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.19.1.yml/badge.svg
-   :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.19.1.yml
-
-.. |spack-v0.19.0-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.19.0.yml/badge.svg
-   :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.19.0.yml
 
 .. |spack-v0.18.1-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.18.1.yml/badge.svg
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.18.1.yml
