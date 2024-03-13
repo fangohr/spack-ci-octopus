@@ -29,6 +29,7 @@ RUN apt-get install -y --no-install-recommends \
               git \
               openssh-server \
               python3 \
+              python3-dev \
               unzip \
               vim \
            && rm -rf /var/lib/apt/lists/*
