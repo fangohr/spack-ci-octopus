@@ -33,7 +33,7 @@ spack-v0.18.1:
 # all be done by the spack-autotools class, and that's what we want to check
 # here.
 spack-latest-octopusdev:
-	docker build -f Dockerfile-octopusdev \
+	docker build -f Dockerfile \
 			--build-arg SPACK_VERSION=releases/latest \
 			--build-arg OCTOPUS_VERSION=@develop \
 			-t octopus-spack-latest-octopusdev .
