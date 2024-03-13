@@ -4,7 +4,9 @@ FROM debian:bullseye
 # # but other strings can be given to the docker build command
 # # (for example docker build --build-arg SPACK_VERSION=v0.16.2)
 ARG SPACK_VERSION=develop
+ARG OCTOPUS_VERSION=""
 RUN echo "Building with spack version ${SPACK_VERSION}"
+RUN echo "Building with Octopus version ${OCTOPUS_VERSION}"
 
 # general environment for docker
 ENV SPACK_ROOT=/home/user/spack \
@@ -56,10 +58,10 @@ RUN ls -l $SPACK_ROOT/var/spack/repos/builtin/packages/octopus
 RUN . $SPACK_ROOT/share/spack/setup-env.sh && spack info octopus
 
 # display specs of upcoming spack installation
-RUN . $SPACK_ROOT/share/spack/setup-env.sh && spack spec octopus +netcdf+parmetis+arpack+cgal+pfft+python+likwid+libyaml+elpa+nlopt
+RUN . $SPACK_ROOT/share/spack/setup-env.sh && spack spec octopus$OCTOPUS_VERSION +netcdf+parmetis+arpack+cgal+pfft+python+likwid+libyaml+elpa+nlopt
 
 # run the spack installation
-RUN . $SPACK_ROOT/share/spack/setup-env.sh && spack install octopus +netcdf+parmetis+arpack+cgal+pfft+python+likwid+libyaml+elpa+nlopt
+RUN . $SPACK_ROOT/share/spack/setup-env.sh && spack install octopus$OCTOPUS_VERSION +netcdf+parmetis+arpack+cgal+pfft+python+likwid+libyaml+elpa+nlopt
 
 # run spack smoke tests for octopus. We get an error if any of the fail.
 RUN . $SPACK_ROOT/share/spack/setup-env.sh && spack test run --alias testname octopus
