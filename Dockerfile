@@ -28,7 +28,7 @@ RUN apt-get install -y --no-install-recommends \
               gfortran \
               git \
               openssh-server \
-              python \
+              python3 \
               unzip \
               vim \
            && rm -rf /var/lib/apt/lists/*
