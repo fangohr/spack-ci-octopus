@@ -22,7 +22,9 @@ spack-v0.19.2:
    -t octopus-spack-v0.19.2 .
 
 spack-v0.18.1:
-	docker build -f Dockerfile --build-arg SPACK_VERSION=v0.18.1 \
+	@# this (older?) version of spack does not compile on Debian bookworm (12),
+	@# so we keep using bullseye (11)
+	docker build -f Dockerfile-bullseye --build-arg SPACK_VERSION=v0.18.1 \
    -t octopus-spack-v0.18.1 .
 
 # latest version of spack but develop version of octopus.
