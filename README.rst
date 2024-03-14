@@ -30,7 +30,7 @@ We try different versions of spack (typically the last update for every minor
 release). Each version of spack has one "recommended" version of Octopus
 (typically the most recent Octopus release at the time of the spack release):
 
-- |spack-develop-octopus-stable| Spack develop version (git head), latest octopus release
+- |spack-develop-octopus-stable| Spack develop version (git head), latest octopus release (that's Octopus 14.0 on 14 March 2024)
 - |spack-latest-octopusdev| Spack latest release, Octopus develop (git head)
 - |spack-latest-octopus-stable| Spack latest release, Octopus ??.?
 - |spack-v0.21.2-octopus-stable| Spack release 0.21.2, Octopus 13.0
