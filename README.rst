@@ -24,7 +24,7 @@ The following targets clone spack, and attempt to install octopus through spack.
 The instructions are embedded in `this Dockerfile <Dockerfile>`__.
 
 They following targets all use the default version of octopus (i.e. what spack
-would install if we run `spack install octopus`).
+would install if we run ``spack install octopus``).
 
 We try different versions of spack (typically the last update for every minor
 release). Each version of spack has one "recommended" version of Octopus
