@@ -1,3 +1,8 @@
+spack-847f560-octopus15.1:
+	@# after adding fixes to the octopus/package.py, there was no spack release yet.
+	@# to test this version nevertheless, we use a particular hash here:
+	docker build -f Dockerfile -t octopus-spack-oct15.1 --build-arg SPACK_VERSION=847f560 .
+
 # Install octopus via spack. Using most recent spack version ("develop")
 # and default Octopus version
 spack-develop:

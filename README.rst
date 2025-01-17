@@ -34,8 +34,8 @@ release). Each version of spack has one "recommended" version of Octopus
 - |spack-v0.19.2-octopus-stable| Spack release 0.19.2, Octopus 12.1
 - |spack-v0.20.3-octopus-stable| Spack release 0.20.3, Octopus 12.2
 - |spack-v0.21.2-octopus-stable| Spack release 0.21.2, Octopus 13.0
+- |spack-847f560-octopus15.1| Spack version 847f560, Octopus 15.1
 - |spack-develop-octopus-stable| Spack develop version (git head), latest octopus release (that's Octopus 14.0 on 14 March 2024)
-
 - |spack-latest-octopusdev| Spack latest release, Octopus develop (git head)
 - |spack-latest-octopus-stable| Spack latest release, with recommended Octopus version
 
@@ -45,6 +45,9 @@ release). Each version of spack has one "recommended" version of Octopus
 
 .. |spack-latest-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-latest.yml/badge.svg
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-latest.yml
+
+.. |spack-847f560-octopus15.1| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-847f560-octopus15.1.yml/badge.svg
+   :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-847f560-octopus15.1.yml
 
 .. |spack-v0.21.2-octopus-stable| image:: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.21.2.yml/badge.svg
    :target: https://github.com/fangohr/spack-ci-octopus/actions/workflows/spack-v0.21.2.yml
