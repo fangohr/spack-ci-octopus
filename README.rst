@@ -17,6 +17,21 @@ global reformatting of spack files, etc. This repository (at
 https://github.com/fangohr/spack-ci-octopus) is meant to detect these changes
 more easily.
 
+How to install a recent version of Octopus with spack?
+------------------------------------------------------
+
+- 15.1 with development brach of spack: |spack-develop-octopus-stable| Spack
+  develop version (git head), latest octopus release (that's Octopus 15.1 in
+  January 2025)
+
+  ```
+  # install spack into subbirectory `spack`:
+  git clone -c feature.manyFiles=true  https://github.com/spack/spack.git
+  spack/bin/spack install octopus@15.1+netcdf +parmetis+arpack+cgal+pfft+python+likwid+libyaml+elpa+nlopt
+  ```
+
+
+
 Status
 ------
 
@@ -35,7 +50,7 @@ release). Each version of spack has one "recommended" version of Octopus
 - |spack-v0.20.3-octopus-stable| Spack release 0.20.3, Octopus 12.2
 - |spack-v0.21.2-octopus-stable| Spack release 0.21.2, Octopus 13.0
 - |spack-847f560-octopus15.1| Spack version 847f560, Octopus 15.1
-- |spack-develop-octopus-stable| Spack develop version (git head), latest octopus release (that's Octopus 14.0 on 14 March 2024)
+- |spack-develop-octopus-stable| Spack develop version (git head), latest octopus release (that's Octopus 15.1 on 27 January 2025)
 - |spack-latest-octopusdev| Spack latest release, Octopus develop (git head)
 - |spack-latest-octopus-stable| Spack latest release, with recommended Octopus version
 
