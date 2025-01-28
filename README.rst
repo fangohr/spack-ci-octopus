@@ -20,16 +20,49 @@ more easily.
 How to install a recent version of Octopus with spack?
 ------------------------------------------------------
 
-- 15.1 with development brach of spack: |spack-develop-octopus-stable| Spack
+- Ocotpus version 15.1 with development brach of spack: 
+
+  Spack
   develop version (git head), latest octopus release (that's Octopus 15.1 in
-  January 2025)
+  January 2025)::
 
-  ```
-  # install spack into subbirectory `spack`:
-  git clone -c feature.manyFiles=true  https://github.com/spack/spack.git
-  spack/bin/spack install octopus@15.1+netcdf +parmetis+arpack+cgal+pfft+python+likwid+libyaml+elpa+nlopt
-  ```
+  
+    # install spack into subdirectory `spack`:
+    git clone -c feature.manyFiles=true  https://github.com/spack/spack.git
 
+    # compile octopus within this spack instance (takes about 2 hours)
+    spack/bin/spack install octopus@15.1+netcdf +parmetis+arpack+cgal+pfft+python+likwid+libyaml+elpa+nlopt
+    
+  CI for this: |spack-develop-octopus-stable| 
+
+- Octopus version 15.1 from particular hash of spack (should be more robust but less up to date)::
+
+    # install spack into subdirectory `spack`:
+    git clone -c feature.manyFiles=true https://github.com/spack/spack.git
+
+    cd spack
+    # checkout particular version
+    git clone 847f560
+
+    # compile octopus
+    spack/bin/spack install octopus@15.1+netcdf +parmetis+arpack+cgal+pfft+python+likwid+libyaml+elpa+nlopt
+
+  CI for this: |spack-847f560-octopus15.1| 
+
+How to use Octopus after installing it via spack?
+-------------------------------------------------
+
+Assuming we are in the root directory of the cloned `spack` repository::
+
+    . share/spack/setup-env.sh
+
+    # now `spack` is in the PATH
+
+    spack load octopus  
+
+    # now `octopus` is in the PATH
+
+    octopus --version
 
 
 Status
