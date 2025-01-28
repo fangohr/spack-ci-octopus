@@ -31,7 +31,7 @@ How to install a recent version of Octopus with spack?
     git clone -c feature.manyFiles=true  https://github.com/spack/spack.git
 
     # compile octopus within this spack instance (takes about 2 hours)
-    spack/bin/spack install octopus@15.1+netcdf +parmetis+arpack+cgal+pfft+python+likwid+libyaml+elpa+nlopt
+    spack/bin/spack install octopus@15.1+netcdf+parmetis+arpack+cgal+pfft+python+likwid+libyaml+elpa+nlopt
     
   CI for this: |spack-develop-octopus-stable| 
 
@@ -45,7 +45,7 @@ How to install a recent version of Octopus with spack?
     git clone 847f560
 
     # compile octopus
-    spack/bin/spack install octopus@15.1+netcdf +parmetis+arpack+cgal+pfft+python+likwid+libyaml+elpa+nlopt
+    spack/bin/spack install octopus@15.1+netcdf+parmetis+arpack+cgal+pfft+python+likwid+libyaml+elpa+nlopt
 
   CI for this: |spack-847f560-octopus15.1| 
 
